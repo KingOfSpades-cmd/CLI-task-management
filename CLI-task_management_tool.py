@@ -31,17 +31,17 @@ def complete_tasks():
         print("Please enter a valid number.\n")
 
 while True:
-    print("1. Add Task\n2. Show Tasks\n3. Exit\n4. Complete a Task")
+    print("1. Add Task\n2. Show Tasks\n3. Complete a Task\n4. Exit")
     choice = input("Choose an option: ")
     if choice == '1':
         add_task()
     elif choice == '2':
         show_tasks()
     elif choice == '3':
+        complete_tasks()
+    elif choice == '4':
         print("Exiting the program.")
         break
-    elif choice == '4':
-        complete_tasks()
     else:
         print("Invalid choice. Please try again.\n")
 # This is a simple command-line to-do list application that has priority and deadlines.
